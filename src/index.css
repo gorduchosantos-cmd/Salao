@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
+@theme {
+  --color-dark: #050505;
+  --color-dark-lighter: #0a0a0a;
+  --color-gold: #C5A059;
+  --color-gold-light: #E2C792;
+
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-pulse-gold: pulse-gold 2s infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes pulse-gold {
+    0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(197, 160, 89, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-dark-lighter/70 backdrop-blur-xl border-b border-white/5;
+  }
+  
+  .text-gradient {
+    @apply bg-linear-to-br from-white to-gold bg-clip-text text-transparent;
+  }
+
+  .bento-card {
+    @apply bg-dark-lighter border border-white/5 transition-all duration-500 ease-out;
+  }
+
+  .bento-card:hover {
+    @apply border-gold/30 -translate-y-1.5;
+  }
+}
