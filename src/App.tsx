@@ -21,7 +21,7 @@ const SERVICES = [
   {
     title: "Corte Design",
     category: "Visagismo",
-    image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800"
+    image: "https://drive.google.com/uc?id=1o-hsiQcpRa-pEPqeIQWyPaUxQdBfQJma"
   },
   {
     title: "Coloração Premium",
@@ -139,9 +139,9 @@ export default function App() {
         >
           <div className="absolute inset-0 bg-linear-to-b from-dark/40 via-dark/60 to-dark z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=2000" 
+            src="https://drive.google.com/uc?id=1o-hsiQcpRa-pEPqeIQWyPaUxQdBfQJma" 
             className="w-full h-full object-cover scale-110" 
-            alt="Luxury Salon"
+            alt="Simone Santos - Haute Coiffure"
             referrerPolicy="no-referrer"
           />
         </motion.div>
@@ -236,9 +236,9 @@ export default function App() {
               className="bento-card md:col-span-2 md:row-span-2 rounded-[2rem] p-10 flex flex-col justify-end overflow-hidden relative group"
             >
               <img 
-                src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=1200" 
+                src="https://drive.google.com/uc?id=1o-hsiQcpRa-pEPqeIQWyPaUxQdBfQJma" 
                 className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" 
-                alt="Experience"
+                alt="Simone Santos Experience"
                 referrerPolicy="no-referrer"
               />
               <div className="relative z-10">
